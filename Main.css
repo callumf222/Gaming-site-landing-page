@@ -1,10 +1,11 @@
 body{
     background-color: #0d0d0d;
     caret-color: transparent;
+    overflow: hidden;
 }
 
 #mainText{
-    font-size: 20rem;
+    font-size: 25rem;
     font-weight: 700;
 
     display: flex;
@@ -39,3 +40,4 @@ body{
 #letter6{
     background-image: url("https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
 }
+
