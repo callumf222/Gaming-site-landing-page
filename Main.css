@@ -1,0 +1,23 @@
+body{
+    background-color: #0d0d0d;
+    caret-color: transparent;
+}
+
+#mainText{
+    font-size: 20rem;
+    font-weight: 700;
+}
+
+#letter1, #letter2, #letter3, #letter4, #letter5, #letter6{
+    text-decoration: none;
+
+    font-family: 'Roboto Slab', serif;
+
+    background: url(./photo.jpg) 50% 50%;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+
+    -webkit-text-stroke: 2px white;
+}
