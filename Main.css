@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
 html, body{
     height: 100%;
 }
@@ -6,31 +8,47 @@ html, body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
     caret-color: transparent;
     /*overflow: hidden;*/
 }
 
+#gameInfomation{
+    height: 100%;
+    width: 100%;
+}
 
-li, a, button{
+#gameImage{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-size: 50%;
+    border: pink 2px solid;
+    background-image: url("https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60");
+
+}
+
+#companyTitle{
+    position: absolute;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    top: 10%;
+    font-size: 5rem;
+}
+
+nav{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+li, a{
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
-    color: black;
+    color: white;
     text-decoration: none;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    height: 5%;
-    border: yellow 2px solid;
-}
-
-.logo{
-    cursor: pointer;
-    width: 15%;
 }
 
 .nav_links{
@@ -52,73 +70,4 @@ header{
 
 
 
-#gameInfomation{
-    border: purple 2px solid;
-    height: 95%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-  input[type=radio] {
-    display: none;
-  }
-  
-  .card {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: transform .4s ease;
-    cursor: pointer;
-    
-  }
-  
-  .container {
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    height: 300px;
-    transform-style: preserve-3d;
-    border: red 2px solid;
-  }
-  
-  .cards {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-  }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-    transform: translatex(-40%) scale(.8);
-    opacity: .4;
-    z-index: 0;
-  }
-  
-  #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-    transform: translatex(40%) scale(.8);
-    opacity: .4;
-    z-index: 0;
-  }
-  
-  #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-    transform: translatex(0) scale(1);
-    opacity: 1;
-    z-index: 1;
-
-  }
-  
- 
-  
- 
