@@ -6,7 +6,6 @@ html, body{
 }
 
 
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -25,14 +24,15 @@ html, body{
     width: 100%;
     position: absolute;
     top: 0;
+    border: 2px solid pink;
 }
 
 #companyTitle{
-    position: absolute;
     text-align: center;
     padding: 30px;
     width: 100%;
-    
+    position: absolute;
+    top: -5%;
 }
 
 .title{
