@@ -14,18 +14,13 @@ html, body{
     /*overflow: hidden;*/
 }
 
-#gameInfomation{
-    height: 100%;
-    width: 100%;
-    display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 #gameImage{
     height: 70%;
     width: 60%;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border: 2px solid pink;
 }
 
@@ -43,6 +38,20 @@ html, body{
     color: white;
     font-size: 15rem;
     font-family: 'Roboto Slab', serif;
+}
+
+nav{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.navItem{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 4rem;
 }
 
 #letter1{
@@ -70,4 +79,3 @@ html, body{
     -webkit-background-clip: text;
     -webkit-text-stroke: 1px white;
 }
-
