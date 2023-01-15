@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400&display=swap');
 
 html, body{
     height: 100%;
@@ -6,6 +6,8 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("https://images.pexels.com/photos/9072329/pexels-photo-9072329.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -14,7 +16,7 @@ html, body{
     margin: 0;
     padding: 0;
     caret-color: transparent;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 
@@ -27,70 +29,25 @@ html, body{
     font-family: 'Roboto Slab', serif;
 }
 
-nav{
-    position: absolute;
-    top: 3%;
-    left: 10%;
-    height: 10%;
-    font-family: 'Sofia Sans Semi Condensed', sans-serif;
-    background-color: #1a1a1a;
-    width: 80%;
-    display: inline;
+li, a, button{
+    text-decoration: none;
 }
 
-#navBar{
+header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 10px;
+    background-color: #33312e;
 }
 
-#companyLogoHolder{
-    background-color: #400080;
-    display: flex;
-    justify-content: center;
-    width: 10%;
-    border: 2px solid red;
+#navbar{
+    list-style: none;
 }
 
-#companyLogo{
-  
-}
-
-.searchBar{
-    width: 100%;
-    max-width: 700px;
-    background:rgba(255, 255, 255, 0.2);
-    display: flex; 
-    align-items: center;
-    border-radius: 60px;
-    backdrop-filter: blur(4px) saturate(180%);
-}
-
-.searchBar input{
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 24px 20px;
-    font-size: 20px;
-    color: white;
-}
-
-::placeholder{
-    color: white;
-}
-
-.searchBar button img{
-    width: 25px;
-}
-
-.searchBar button {
-    border: 0;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background: #58626b;
-    cursor: pointer;
+#navbar li{
+    display: inline-block;
+    padding: 0px 20px;
 }
 
 
@@ -104,7 +61,7 @@ nav{
     position: relative;
     z-index: 1;
     text-decoration: none;
-    padding-right: 3%;
+    padding: 0px 20px;
 }
 
 .navItem:hover{
@@ -120,7 +77,7 @@ nav{
     bottom: 0;
     opacity: 0;
     content: "";
-    background-color: #42FBF2;
+    background-color: #ee6c4d;
 }
 
 .navItem:hover::before{
@@ -130,4 +87,56 @@ nav{
     opacity: 1;
     z-index: -1;
 }
+
+
+#gameContent{
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+#gameTitle{
+    background-color: #ee6c4d;
+    font-size: 1rem;
+    width: 25%;
+}
+
+#companyTitle{
+    font-size: 3.5rem;
+    width: 80%;
+}
+
+#gameDesc{
+    font-size: 2rem;
+}
+
+#buttons{
+    display: inline;
+}
+
+#btn1Holder{
+    padding-top: 3%;
+    padding-left: 5%;
+    color: white;
+    width: 250px;
+    height: 50px;
+    background: #ee6c4d;
+    transform: skew(22deg);
+}
+
+#btn2Holder{
+    padding-left: 10%;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background: #33312e;
+    transform: skew(25deg);
+}
+
+
+
+
 
