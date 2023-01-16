@@ -28,6 +28,9 @@ html, body{
    
     overflow: hidden;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+    filter: blur(12px);
+    transform: scale(1.1); 
   }
 
   #slider ul {
@@ -39,8 +42,8 @@ html, body{
     margin: 0;
     transition: all 750ms ease;
     left: 0;
-
-  }
+  } 
+  
   #slider ul li {
     position: relative;
     height: 100%;
@@ -51,7 +54,6 @@ html, body{
   #slider ul li img{
     width: 2000px;
     height: 100%;
-
   }
 
 
