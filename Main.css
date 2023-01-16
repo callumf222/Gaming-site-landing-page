@@ -2,12 +2,9 @@
 
 html, body{
     height: 100%;
-    background-color: #191970;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://images.pexels.com/photos/9072329/pexels-photo-9072329.jpeg?auto=compress&cs=tinysrgb&w=1600");
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 400;
+    overflow: hidden;
 }
 
 
@@ -16,20 +13,49 @@ html, body{
     margin: 0;
     padding: 0;
     caret-color: transparent;
+}
+
+
+
+#slider {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+
+    width: 2000px;
+    height: 100%;
+   
     overflow: hidden;
-}
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+
+  #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+
+  }
+  #slider ul li {
+    position: relative;
+    height: 100%;
+    
+    float: left;
+  }
+
+  #slider ul li img{
+    width: 2000px;
+    height: 100%;
+
+  }
 
 
-
-
-.title{
-    text-decoration: none;
-    color: white;
-    font-size: 15rem;
-    font-family: 'Roboto Slab', serif;
-}
-
-li, a, button{
+/*li, a, button{
     text-decoration: none;
 }
 
@@ -86,7 +112,7 @@ header{
     right: 0;
     opacity: 1;
     z-index: -1;
-}
+}*/
 
 #holder{
     height: 100%;
@@ -100,6 +126,8 @@ header{
     color: white;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 300;
+    z-index: 5;
+
 }
 
 #gameTitleHolder{
