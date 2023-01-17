@@ -4,7 +4,6 @@ html, body{
     height: 100%;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 400;
-    overflow: hidden;
 }
 
 
@@ -210,3 +209,24 @@ header{
 #btn2Text{
     transform: skew(-18deg);
 }
+
+
+
+
+
+
+
+#gameView{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 400;
+    height: 200%;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
