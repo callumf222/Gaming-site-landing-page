@@ -220,7 +220,6 @@ header{
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-flow: wrap;
 
     font-family: 'Sofia Sans', sans-serif;
@@ -228,5 +227,50 @@ header{
     height: 200%;
     width: 100%;
     background-image: url("https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    color: white;
+}
+
+
+#titleHolder{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+
+#sideText1{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #ee6c4d;
+    font-size: 1.3rem;
+}
+
+#title{
+    font-size: 5rem;
+    font-weight: 700;
+    width: 60%;
+    padding-left: 30px;
+}
+
+#imageHolder{
+    border: 2px red solid;
+    
+    --gap: 16px;
+    --num-cols: 2;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid
+  
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+}
+
+.gameImg{
+    width: 40%;
+    height: 40%;
+    
 }
 
