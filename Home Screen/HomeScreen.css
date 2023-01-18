@@ -257,7 +257,7 @@ header{
     width: 100%;
     
     --gap: 50px;
-    --rowGap: 300px;
+    --rowGap: 100px;
     --num-cols: 2;
     --row-height: 500px;
 
@@ -346,7 +346,7 @@ header{
 .hiddenMainText{
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-10%);
+    transform: translateX(-15%);
     transition-delay: 900ms;
     transition: all 900ms;
 }
