@@ -269,7 +269,6 @@ header{
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
     row-gap: var(--rowGap);
-
 }
 
 .gameImg{
@@ -284,6 +283,7 @@ header{
    transition-duration: 0.3s;
    -webkit-transition-property: box-shadow, transform;
    transition-property: box-shadow, transform;
+   opacity: 0.8;
 }
 
 .gameImg:hover, .gameImg:focus, .gameImg:active{
@@ -291,10 +291,22 @@ header{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
-.backgroundHolder:hover > .gameImg{
+  
+  .gameImg:hover {
     opacity: 0.3;
   }
+
+  .backgroundHolder:hover > .imageText{
+    transition: all ease 0.3s;
+    opacity: 0;
+  }
+
+  
+  .backgroundHolder:hover > .descText{
+    transition: all ease 0.5s;
+    opacity: 1;
+  }
+
 
 
 .backgroundHolder{
@@ -311,6 +323,60 @@ header{
     font-size: 2rem;
     font-weight: 700;
 }
+
+.descText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 1.6rem;
+    font-weight: 400;
+    opacity: 0;
+}
+
+
+.hiddenSideText{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.hiddenMainText{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-10%);
+    transition-delay: 900ms;
+    transition: all 900ms;
+}
+
+.hiddenGameImage{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition-delay: 1300ms;
+    transition: all 900ms;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+.hiddenGameImage:nth-child(2){
+    transition-delay: 400ms;
+}
+.hiddenGameImage:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.hiddenGameImage:nth-child(4){
+    transition-delay: 900ms;
+}
+
 
 @media screen and (max-width: 1024px) {
     #imageHolder{

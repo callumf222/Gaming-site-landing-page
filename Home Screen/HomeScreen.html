@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="HomeScreen.css">
-    <script src="HomeScreen.js"></script>
+    <script defer src="HomeScreen.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,30 +48,34 @@
     <div id="gameView">
         
         <div id="titleHolder">
-            <p id="sideText1"># HITBOX Software</p>
-            <h1 id="title">Great Features and Gameplay</h1>
+            <p id="sideText1" class="hiddenSideText"># HITBOX Software</p>
+            <h1 id="title"  class="hiddenMainText">Great Features and Gameplay</h1>
         </div>
 
 
         <div id="imageHolder">
-            <div id="background1Holder" class="backgroundHolder">
+            <div id="background1Holder" class="backgroundHolder hiddenGameImage">
                 <img src="https://images.pexels.com/photos/669277/pexels-photo-669277.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" class="gameImg">
                 <div class="imageText">Great gun gameplay</div>
+                <div class="descText">We have used unity because kms it works</div>
             </div>
 
-            <div id="background2Holder" class="backgroundHolder">
+            <div id="background2Holder" class="backgroundHolder hiddenGameImage">
                 <img src="https://images.pexels.com/photos/886454/pexels-photo-886454.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" class="gameImg">
                 <div class="imageText">Fun and exciting missions</div>
+                <div class="descText">Dive into missions and try your aim. Completing missions for rewards.</div>
             </div>
 
-            <div id="background3Holder" class="backgroundHolder">
+            <div id="background3Holder" class="backgroundHolder hiddenGameImage" >
                 <img src="https://images.pexels.com/photos/6566976/pexels-photo-6566976.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" class="gameImg">
                 <div class="imageText">Custom guns and camos</div>
+                <div class="descText">Shiny guns and slick camos</div>
             </div>
 
-            <div id="background4Holder" class="backgroundHolder">
+            <div id="background4Holder" class="backgroundHolder hiddenGameImage" >
                 <img src="https://images.pexels.com/photos/5435551/pexels-photo-5435551.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" class="gameImg">
                 <div class="imageText">Advance zombie AI</div>
+                <div class="descText">Zombies will come at you like never seen before, more realistic and more dangerous than ever before</div>
             </div>
 
         </div>

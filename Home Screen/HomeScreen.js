@@ -44,3 +44,28 @@ var responsiveSlider = function() {
     window.onload = function() {
     responsiveSlider();  
     }
+
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if(entry.isIntersecting){
+        entry.target.classList.add('show');
+    }else{
+      entry.target.classList.remove('show');
+    }
+
+
+
+  });
+}); 
+
+const hiddenSideText = document.querySelectorAll('.hiddenSideText')
+const hiddenMainText = document.querySelectorAll('.hiddenMainText')
+const hiddenGameImage = document.querySelectorAll('.hiddenGameImage')
+
+
+hiddenSideText.forEach((el) => observer.observe(el));
+hiddenMainText.forEach((el) => observer.observe(el));
+hiddenGameImage.forEach((el) => observer.observe(el));
