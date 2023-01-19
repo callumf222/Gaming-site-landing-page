@@ -4,7 +4,6 @@ html, body{
     height: 100%;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 400;
-    /*overflow-x: hidden;*/
 }
 
 
@@ -23,7 +22,7 @@ html, body{
     top: 0px;
     z-index: 0;
 
-    width: 100%;
+    width: 1800px;
     height: 100%;
    
     overflow: hidden;
@@ -42,6 +41,7 @@ html, body{
     margin: 0;
     transition: all 750ms ease;
     left: 0;
+    
   } 
   
   #slider ul li {
@@ -52,7 +52,7 @@ html, body{
   }
 
   #slider ul li img{
-    width: 2000px;
+    width: 1800px;
     height: 100%;
   }
 
@@ -251,13 +251,15 @@ header{
     font-weight: 700;
     width: 60%;
     padding-left: 30px;
+
 }
 
 #imageHolder{
     width: 100%;
     
+    
     --gap: 50px;
-    --rowGap: 100px;
+    --rowGap: 90px;
     --num-cols: 2;
     --row-height: 500px;
 
